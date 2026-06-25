@@ -14,7 +14,7 @@ const PORT = 10000;
 
 // --- Keepz данные (берутся из Render → Environment) ---
 const KEEPZ_API_URL = "https://gateway.keepz.me/ecommerce-service/api/integrator/order";
-const KEEPZ_IDENTIFIER = process.env.KEEPZ_IDENTIFIER;
+const KEEPZ_IDENTIFIER = process.env.KEEPZ_INTEGRATOR_ID;
 const KEEPZ_INTEGRATOR_ID = process.env.KEEPZ_INTEGRATOR_ID;
 const KEEPZ_RECEIVER_ID = process.env.KEEPZ_RECEIVER_ID;
 const KEEPZ_RSA_PUBLIC_KEY = process.env.KEEPZ_RSA_PUBLIC_KEY;
