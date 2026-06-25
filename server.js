@@ -95,7 +95,8 @@ async function createKeepzOrder({ name, email, tariff, price, format }) {
     currency: "USD",
     language: "EN",
     orderProperties: {
-      DESCRIPTION: { value: `${format} — ${tariff} (${name}, ${email})`, isEditable: false },
+     orderProperties: {
+  DESCRIPTION: { value: `Oplata ${tariff}`, isEditable: false },
     },
   };
 
