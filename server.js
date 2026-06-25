@@ -94,6 +94,8 @@ async function createKeepzOrder({ name, email, tariff, price, format }) {
     integratorOrderId: integratorOrderId,
     currency: "USD",
     language: "EN",
+    orderProperties: {
+      DESCRIPTION: { value: "Test payment", isEditable: false },
     },
   };
 
