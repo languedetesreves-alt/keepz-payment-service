@@ -92,7 +92,7 @@ async function createKeepzOrder({ name, email, tariff, price, format }) {
     receiverType: "BRANCH",
     integratorId: KEEPZ_INTEGRATOR_ID,
     integratorOrderId: integratorOrderId,
-    currency: "USD",
+    currency: "GEL",
     language: "EN",
     orderProperties: {
       DESCRIPTION: { value: "Test payment", isEditable: false },
