@@ -94,9 +94,6 @@ async function createKeepzOrder({ name, email, tariff, price, format }) {
     integratorOrderId: integratorOrderId,
     currency: "USD",
     language: "EN",
-    orderProperties: {
-     orderProperties: {
-  DESCRIPTION: { value: `Oplata ${tariff}`, isEditable: false },
     },
   };
 
