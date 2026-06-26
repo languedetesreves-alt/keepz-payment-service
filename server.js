@@ -87,15 +87,17 @@ async function createKeepzOrder({ name, email, tariff, price, format }) {
   const integratorOrderId = uuidv4();
 
   const payload = {
-    amount: price,
-    receiverId: KEEPZ_RECEIVER_ID,
-    receiverType: "BRANCH",
-    integratorId: KEEPZ_INTEGRATOR_ID,
-    integratorOrderId: integratorOrderId,
-    currency: "GEL",
-    language: "EN",
-    orderProperties: {
-      DESCRIPTION: { value: "Test payment", isEditable: false },
+  amount: price,
+  receiverId: KEEPZ_RECEIVER_ID,
+  receiverType: "BRANCH",
+  integratorId: KEEPZ_INTEGRATOR_ID,
+  integratorOrderId: integratorOrderId,
+  currency: "USD", 
+  acquiringCurrency: "USD",
+  distributionCurrency: "USD",
+  language: "EN",
+  orderProperties: {
+    DESCRIPTION: { value: "Test payment", isEditable: false },
     },
   };
 
